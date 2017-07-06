@@ -1,5 +1,4 @@
 require 'nokogiri'
-require 'find'
 
 Material = Struct.new(:name, :volume)
 
