@@ -1,0 +1,46 @@
+# 実行するRubyのバージョンを指定
+AllCops:
+  TargetRubyVersion: 2.2
+  UseCache: false
+
+# 日本語でのコメントを許可
+AsciiComments:
+  Enabled: false
+
+# 文字列はシングルクオーテーションを使うようにする
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+# 連続したスペースを許可する
+Layout/SpaceBeforeFirstArg:
+  Enabled: false
+
+# 1行辺り120文字の制限
+Metrics/LineLength:
+  Max: 120
+
+# ABCSizeチェックの上限を20に増やす
+Metrics/AbcSize:
+  Max: 20
+
+# クラスやモジュールのドキュメントを必須としない
+Style/Documentation:
+  Enabled: false
+
+# 正規表現の表記を自由に選択できるようにする
+Style/PerlBackrefs:
+  Enabled: false
+
+# 複数行でも {} 表記を使えるようにする
+Style/BlockDelimiters:
+  Enabled: false
+
+# %wで使用する囲い文字を()にする
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%w": '()'
+    "%W": '()'
+
+# 改行文字をLFに強制する
+Layout/EndOfLine:
+  EnforcedStyle: lf
