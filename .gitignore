@@ -1,3 +1,22 @@
-output.txt
-datas/
-my_materials.txt
+vendor/
+.bundle/
+nohup.out
+*.log
+
+
+### Intellij IDEA ###
+.idea/
+*.imi
+
+
+### vim ###
+*.swp
+*.swap
+*.tmp
+*.temp
+*~
+
+
+html/
+*.txt
+!.gitkeep
